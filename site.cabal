@@ -1,19 +1,19 @@
-name:                website-hakyll
+name:                site
 version:             0.1.0.0
 -- synopsis:
 -- description:
-homepage:            https://github.com/ajdawson/website-hakyll#readme
+homepage:            https://github.com/ajdawson/website-hakyll
 license:             BSD3
 license-file:        LICENSE
 author:              Andrew Dawson
-maintainer:          andrew.dawson@physics.ox.ac.uk
+maintainer:          ajdawson@acm.org
 copyright:           2017 Andrew Dawson
 category:            Web
 build-type:          Simple
 extra-source-files:  README.md
 cabal-version:       >=1.10
 
-executable website-hakyll
+executable site
   main-is:             site.hs
   default-language:    Haskell2010
   ghc-options:         -threaded
