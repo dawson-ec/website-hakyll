@@ -8,6 +8,10 @@ import           Hakyll
 main :: IO ()
 main = hakyll $ do
 
+    match "images/favicon.ico" $ do
+        route   $ gsubRoute "images/" (const "")
+        compile $ copyFileCompiler
+
     match "css/*" $ do
         route   idRoute
         compile compressCssCompiler

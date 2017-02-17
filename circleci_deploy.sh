@@ -29,7 +29,7 @@ Commit: $CIRCLE_SHA1
 EOF
 if git commit -F commit.msg; then
   git --no-pager log -1
-  git push "$DEPLOY_REPO" master | grep -v https
+  git push "$DEPLOY_REPO" master
 fi
 
 exit 0
