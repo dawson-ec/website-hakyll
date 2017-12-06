@@ -4,7 +4,7 @@ title: Publications
 
 ## Journal articles
 
-* <u>Dawson A.</u>, P. D. Düben, D. A. MacLeod and T. N. Palmer (2017): **Reliable low precision simulations in land surface models**. *Clim. Dynam.*, under review.
+* <u>Dawson A.</u>, P. D. Düben, D. A. MacLeod and T. N. Palmer (2017): **Reliable low precision simulations in land surface models**. *Clim. Dynam.*, accepted.
 * <u>Dawson A.</u> and P. D. Düben (2017): **rpe v5: An emulator for reduced floating-point precision in large numerical simulations**. *Geosci. Model Dev.*, 10, 2221-2230, doi: [10.5194/gmd-10-2221-2017](https://doi.org/10.5194/gmd-10-2221-2017).
 * Düben P. D., A. Subramanian, <u>A. Dawson</u> and T. N. Palmer (2017): **A study of reduced numerical precision to make superparameterization more competitive using a hardware emulator in the OpenIFS model**. *J. Adv. Model. Earth Syst.*, 9, 566-584, doi: [10.1002/2016MS000862](https://doi.org/10.1002/2016MS000862).
 * Düben P. D. and <u>A. Dawson</u> (2017), **An approach to secure weather and climate models against hardware faults**. *J. Adv. Model. Earth Syst.*, 9, 501-513, doi: [10.1002/2016MS000816](https://doi.org/10.1002/2016MS000816).
