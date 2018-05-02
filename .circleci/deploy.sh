@@ -17,7 +17,8 @@ git clone "$DEPLOY_REPO" "$DEPLOY_DIR"
 
 # Enter the deployment directory and copy the built files over:
 cd "$DEPLOY_DIR"
-rsync -av --delete --exclude /.git "$SOURCE_DIR/_site/" .
+rm -rf *
+cp -rv $SOURCE_DIR/_site/* .
 
 # Commit the changes and push to the deployment repository:
 git add .
@@ -30,6 +31,8 @@ EOF
 if git commit -F commit.msg; then
   git --no-pager log -1
   git push "$DEPLOY_REPO" master
+else
+  echo "nothing to deploy..."
 fi
 
 exit 0
