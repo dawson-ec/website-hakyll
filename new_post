@@ -1,0 +1,35 @@
+#!/bin/bash
+#
+# Make a new blog post
+#
+
+set -eu
+
+if [[ $# -ne 1 ]]; then
+    echo "usage: $0 title" 1>&2
+    exit 1
+fi
+
+title=$(echo "$1" | tr " " "_")
+title_lowercase="$(echo $title | tr "A-Z" "a-z")"
+datestamp=$(date '+%Y-%m-%d')
+post="content/blog/${datestamp}-${title_lowercase}.md"
+
+if [[ -f "$post" ]]; then
+    echo "error: post $post already exists" 1>&2
+    exit 2
+fi
+
+cat > $post << EOF
+---
+title: $title
+author:
+tags:
+---
+
+
+<div></div><!--more-->
+
+
+EOF
+echo "Created $post"
