@@ -1,0 +1,27 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: futtetennista/hakyll:latest
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-stack-work-{{ checksum "site.cabal" }}
+      - run:
+          name: Build the static site generator executable
+          command: stack build
+      - save_cache:
+          key: v1-stack-work-{{ checksum "site.cabal" }}
+          paths:
+            - ~/website-hakyll/.stack-work
+            - /root/.stack
+      - run:
+          name: Build the site
+          command: stack exec site rebuild
+      - deploy:
+          name: Deploy to Github Pages
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              .circleci/deploy.sh
+            fi
