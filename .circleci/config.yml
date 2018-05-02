@@ -4,6 +4,9 @@ jobs:
     docker:
       - image: futtetennista/hakyll:latest
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "c6:14:32:cc:50:2a:c5:43:45:3d:8c:cf:b3:09:80:a3"
       - checkout
       - restore_cache:
           keys:
