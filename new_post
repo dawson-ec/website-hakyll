@@ -10,10 +10,10 @@ if [[ $# -ne 1 ]]; then
     exit 1
 fi
 
-title=$(echo "$1" | tr " " "_")
-title_lowercase="$(echo $title | tr "A-Z" "a-z")"
+title="$1"
+title_file=$(echo $title | tr " " "_" | tr "A-Z" "a-z")
 datestamp=$(date '+%Y-%m-%d')
-post="content/blog/${datestamp}-${title_lowercase}.md"
+post="content/blog/${title_file}.md"
 
 if [[ -f "$post" ]]; then
     echo "error: post $post already exists" 1>&2
@@ -23,6 +23,7 @@ fi
 cat > $post << EOF
 ---
 title: $title
+date: $datestamp
 author:
 tags:
 ---
