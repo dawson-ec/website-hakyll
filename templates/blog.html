@@ -1,3 +1,12 @@
+<h2>Tags:</h2>
+<ul class="horizontal">
+  $for(tags)$
+    <li>
+      <a href="$url$">$title$</a>$sep$ |
+    </li>
+  $endfor$
+</ul>
+
 <h2>Recent posts:</h2>
 <ul class="post-list">
   $for(latest)$
@@ -12,12 +21,3 @@
 
 <h2>All posts: (<a href="/atom.xml">atom feed</a>)</h2>
 $partial("templates/post-list.html")$
-
-<h2>Tags:</h2>
-<ul class="horizontal">
-  $for(tags)$
-    <li>
-      <a href="$url$">$title$</a>$sep$ |
-    </li>
-  $endfor$
-</ul>

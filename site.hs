@@ -16,6 +16,12 @@ main = hakyll $ do
         route   idRoute
         compile compressCssCompiler
 
+    match "content/pubs.md" $ do
+        route   $ gsubRoute "content/" (const "") `composeRoutes` setExtension "html"
+        compile $ pandocCompiler
+            >>= loadAndApplyTemplate "templates/default.html" pubsCtx
+            >>= relativizeUrls
+
     match "content/*.md" $ do
         route   $ gsubRoute "content/" (const "") `composeRoutes` setExtension "html"
         compile $ pandocCompiler
@@ -74,6 +80,11 @@ main = hakyll $ do
 
 
 --------------------------------------------------------------------------------
+
+pubsCtx :: Context String
+pubsCtx =
+    constField "extraCss" "/css/pubs.css" `mappend` defaultContext
+
 postCtx :: Context String
 postCtx =
     dateField "date" "%B %e, %Y" `mappend`
