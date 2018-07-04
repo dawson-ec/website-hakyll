@@ -22,6 +22,9 @@ jobs:
       - run:
           name: Build the site
           command: stack exec site rebuild
+      - store_artifacts:
+          path: _site
+          destination: built_site
       - deploy:
           name: Deploy to Github Pages
           command: |

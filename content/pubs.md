@@ -4,6 +4,7 @@ title: Publications
 
 ## Journal articles
 
+* Christensen H. M., <u>A. Dawson</u> and C. E. Holloway (2018): **Forcing Single Column Models using High‐resolution Model Simulations**. *J. Adv. Model. Earth Syst.*, doi: [10.1029/2017MS001189](https://doi.org/10.1029/2017MS001189).
 * <u>Dawson A.</u>, P. D. Düben, D. A. MacLeod and T. N. Palmer (2017): **Reliable low precision simulations in land surface models**. *Clim. Dynam.*, doi: [10.1007/s00382-017-4034-x](https://doi.org/10.1007/s00382-017-4034-x).
 * <u>Dawson A.</u> and P. D. Düben (2017): **rpe v5: An emulator for reduced floating-point precision in large numerical simulations**. *Geosci. Model Dev.*, 10, 2221-2230, doi: [10.5194/gmd-10-2221-2017](https://doi.org/10.5194/gmd-10-2221-2017).
 * Düben P. D., A. Subramanian, <u>A. Dawson</u> and T. N. Palmer (2017): **A study of reduced numerical precision to make superparameterization more competitive using a hardware emulator in the OpenIFS model**. *J. Adv. Model. Earth Syst.*, 9, 566-584, doi: [10.1002/2016MS000862](https://doi.org/10.1002/2016MS000862).
