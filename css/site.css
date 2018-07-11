@@ -69,16 +69,12 @@ ul.post-list p {
 }
 
 a {
-  color: #1e6bb8;
+  color: #2380dd;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-}
-
-a:visited {
-  color: #1e6bb8;
 }
 
 div.footer {
