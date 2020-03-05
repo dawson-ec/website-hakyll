@@ -18,7 +18,7 @@ title: Publications
 #. <u>Dawson A.</u>, P. D. Düben, D. A. MacLeod and T. N. Palmer (2018): **Reliable low precision simulations in land surface models**. *Clim. Dynam.*, 51, 2657-2666, doi: [10.1007/s00382-017-4034-x](https://doi.org/10.1007/s00382-017-4034-x).
 #. Christensen H. M., <u>A. Dawson</u> and C. E. Holloway (2018): **Forcing Single Column Models using High-resolution Model Simulations**. *J. Adv. Model. Earth Syst.*, 10, 1833-1857, doi: [10.1029/2017MS001189](https://doi.org/10.1029/2017MS001189).
 #. Browne P. A., P. de Rosnay, H. Zuo, A. Bennett and <u>A. Dawson</u> (2019): **Weakly Coupled Ocean–Atmosphere Data Assimilation in the ECMWF NWP System**. *Remote Sens.*, 11, 234, doi: [10.3390/rs11030234](https://doi.org/10.3390/rs11030234).
-#. Cooper F. C., P. D. Düben, C. Denis, <u>A. Dawson</u> and P. Ashwin (2019): **The relationship between numerical precision and forecast lead time in the Lorenz'95 system**. *Mon. Weather Rev.*, doi: [10.1175/MWR-D-18-0200.1](https://doi.org/10.1175/MWR-D-18-0200.1).
+#. Cooper F. C., P. D. Düben, C. Denis, <u>A. Dawson</u> and P. Ashwin (2020): **The relationship between numerical precision and forecast lead time in the Lorenz'95 system**. *Mon. Weather Rev.*, 148(2), 849-855, doi: [10.1175/MWR-D-18-0200.1](https://doi.org/10.1175/MWR-D-18-0200.1).
 
 ## Other Publications
 
