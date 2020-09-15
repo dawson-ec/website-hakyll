@@ -1,0 +1,21 @@
+name: Build the website
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: futtetennista/hakyll:4.12.5.1
+    name: Build the static site
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the static site generator
+      run: |
+        stack build
+    - name: Build the site
+      run: |
+        stack exec site rebuild
